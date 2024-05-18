@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto katalog</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+  </head>
+  <body style="background-color: rgb(125, 148, 168)">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Početna <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="katalog.html">Katalog</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Blog
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="bmw.html">BMW X2</a>
+              <a class="dropdown-item" href="audiq.html">Audi Q6</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="kontakt-forma">
+            <h2 class="mb-4">Kontaktirajte nas</h2>
+            <div class="mb-3">
+              <label for="imePrezime" class="form-label">Ime i prezime</label>
+              <input
+                type="text"
+                class="form-control"
+                id="imePrezime"
+                placeholder="Unesite vaše ime i prezime"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email adresa</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Unesite vašu email adresu"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="telefon" class="form-label">Broj telefona</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="telefon"
+                placeholder="Unesite vaš broj telefona"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="poruka" class="form-label">Poruka</label>
+              <textarea
+                class="form-control"
+                id="poruka"
+                rows="5"
+                placeholder="Ukoliko imate pitanja ili sugestije, pišite nam ovde..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="posaljiBtn">
+              Pošalji
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modalni prozor -->
+    <div
+      class="modal fade"
+      id="rezultatModal"
+      tabindex="-1"
+      aria-labelledby="rezultatModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rezultatModalLabel">
+              Proverite da li su Vaši podaci tačni:
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="rezultatPoruke">
+            <!-- Ovde će se prikazati rezultat slanja poruke -->
+          </div>
+          <div class="modal-footer">
+            <a href="kontakt.html">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Pošalji
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <p>&copy; Stefan Brajenović</p>
+      </div>
+    </footer>
+    <script src="modal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  </body>
+</html>

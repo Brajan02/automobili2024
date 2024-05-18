@@ -1,0 +1,145 @@
+.navbar-custom {
+  background-color: aliceblue;
+}
+.navbar-custom .nav-link {
+  color: black;
+  padding: 1em;
+}
+.navbar-custom .nav-link:hover {
+  color: #00008b;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 2rem;
+}
+
+.carousel-inner {
+  height: 600px;
+}
+
+#naslov {
+  font-size: 36px;
+  text-align: center;
+  overflow: hidden;
+  border-right: 0.15em solid rgb(10, 7, 75);
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Ključne animacije */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(10, 7, 75);
+  }
+}
+@media (max-width: 768px) {
+  #naslov {
+    font-size: 24px;
+    white-space: normal;
+    border-right: none;
+    animation: none;
+    padding: 0;
+  }
+  .carousel-inner {
+    height: 200px;
+  }
+}
+.sekcija {
+  margin: 1rem 3rem 3rem 3rem;
+}
+.card-img-top {
+  min-height: 250px;
+}
+#dugme {
+  margin: 20px 20px 40px 20px;
+}
+.slike {
+  width: 100%;
+}
+.kartica {
+  margin-bottom: 40px;
+}
+footer {
+  background-color: #333; /* Tamno siva boja */
+  color: #fff; /* Bela boja teksta */
+  padding: 20px 0; /* Dajemo odstupanje gore i dole */
+  text-align: center; /* Centriranje teksta */
+}
+#kontakt-forma {
+  background-color: #333; /* Tamno siva boja */
+  color: #fff; /* Bela boja teksta */
+  padding: 40px;
+  border-radius: 10px;
+  margin: 20px;
+}
+#hero-image1 {
+  background-image: url('img/bmw1.jpg'); /* Zamijenite URL-om svoje slike */
+  background-size: cover;
+  background-position: center;
+  height: 500px; /* Prilagodite visinu prema potrebi */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+#hero-image2 {
+  background-image: url('img/audiq6.jpg'); /* Zamijenite URL-om svoje slike */
+  background-size: cover;
+  background-position: center;
+  height: 500px; /* Prilagodite visinu prema potrebi */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.gallery img {
+  cursor: pointer;
+}
+
+.modal-img {
+  width: 100%;
+}
+
+.modal-content {
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+
+.modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-navigation button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
